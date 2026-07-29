@@ -17,12 +17,30 @@ IRR_SOURCES=(altdb arin bboi bell canarie host jpirr level3 nestegg nttcom openf
 TRUST_ANCHORS=(afrinic ripencc arin lacnic apnic)
 SAMPLE_DATE="2023-03-01"
 
+# These entries are truncated inside the current irr_dumps.zip itself (fails
+# gzip -t regardless of how many times it's re-downloaded), so treat them as
+# permanently unavailable rather than reporting them as a download failure.
+KNOWN_MISSING_IRR=(
+  "2023-01-01/altdb"
+  "2023-01-01/arin"
+  "2023-01-01/bell"
+)
+
 irr_ok=0
 irr_total=0
+irr_known_missing=0
 rpki_ok=0
 rpki_total=0
 pfx_ok=0
 pfx_total=0
+
+is_known_missing_irr() {
+  local needle="$1" entry
+  for entry in "${KNOWN_MISSING_IRR[@]}"; do
+    [[ "$entry" == "$needle" ]] && return 0
+  done
+  return 1
+}
 
 file_ok() {
   local path="$1"
@@ -42,7 +60,7 @@ for d in "${DATES[@]}"; do
   for s in "${IRR_SOURCES[@]}"; do
     irr_total=$((irr_total + 1))
     out="$DATA_DIR/irr_dumps/$d/ftp.radb.net/radb/dbase/$s.db.gz"
-    if ! file_ok "$out"; then
+    if ! file_ok "$out" && ! is_known_missing_irr "$d/$s"; then
       irr_missing=1
     fi
   done
@@ -64,11 +82,14 @@ for d in "${DATES[@]}"; do
     out="$DATA_DIR/irr_dumps/$d/ftp.radb.net/radb/dbase/$s.db.gz"
     if file_ok "$out"; then
       irr_ok=$((irr_ok + 1))
+    elif is_known_missing_irr "$d/$s"; then
+      irr_known_missing=$((irr_known_missing + 1))
     else
       irr_missing_files+=("$d/$s")
     fi
   done
 done
+irr_expected=$((irr_total - irr_known_missing))
 
 for mm_idx in "${!DATES[@]}"; do
   d="${DATES[$mm_idx]}"
@@ -118,12 +139,19 @@ else
 fi
 
 total_ok=$((irr_ok + rpki_ok + pfx_ok))
-total_expected=$((irr_total + rpki_total + pfx_total))
+total_expected=$((irr_expected + rpki_total + pfx_total))
 echo
-echo "IRR files:       $irr_ok/$irr_total"
+echo "IRR files:       $irr_ok/$irr_expected"
 echo "RPKI files:       $rpki_ok/$rpki_total"
 echo "Prefix2as files:  $pfx_ok/$pfx_total"
 echo "Total:            $total_ok/$total_expected"
+
+if [[ "$irr_known_missing" -gt 0 ]]; then
+  echo
+  echo "Known-missing IRR files ($irr_known_missing) — truncated in the current"
+  echo "irr_dumps.zip and excluded from the totals above:"
+  printf '  %s\n' "${KNOWN_MISSING_IRR[@]}"
+fi
 
 if [[ "${#irr_missing_files[@]}" -gt 0 ]]; then
   echo >&2

@@ -66,11 +66,16 @@ curl -f --retry 3 \
 ## Step 2 — Verify the download
 
 ```bash
-find data -type f \( -name '*.db.gz' -o -name '*.pfx2as.gz' -o -name '*.xz' \) | wc -l   # expect 127
+find data -type f \( -name '*.db.gz' -o -name '*.pfx2as.gz' -o -name '*.xz' \) | wc -l   # expect 124
 find data -type f \( -name '*.db.gz' -o -name '*.pfx2as.gz' \) -exec gzip -t {} +         # no output = all gzip files intact
 find data -type f -name '*.xz' -exec xz -t {} +                                          # no output = all xz files intact
 du -sh data
 ```
+
+> The current `irr_dumps.zip` has three IRR dumps truncated at the source
+> (`2023-01-01/altdb`, `2023-01-01/arin`, `2023-01-01/bell`), so the expected
+> count is 124, not the full 127. `download-data.sh` treats these as
+> known-missing and still reports success once everything else is present.
 
 `radb.db.gz` is by far the largest file per date; the full download takes a
 while the first time. Once `data/` is populated, install the Python

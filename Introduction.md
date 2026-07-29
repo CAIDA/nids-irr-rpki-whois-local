@@ -8,8 +8,9 @@
 - Du et al., _IRRegularities in the Internet Routing Registry_, IMC 2023.
 - ICANN SSAC 121 routing-security briefing.
 
-### Prerequisite NIDS Modules
+### Prerequisite NIDS Assignments
 
+- [How the Internet assigns and uses Autonomous Systems (ASes)](https://github.com/CAIDA/nids-asn-introduction)
 - [Understanding the BGP Control Plane](https://github.com/CAIDA/nids-bgp-control-plane)
 
 ## Introduction
