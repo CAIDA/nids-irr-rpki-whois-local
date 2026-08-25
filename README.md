@@ -1,6 +1,6 @@
 README ⮕ | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | [Task 2A Guidance](Task-greedy.md) | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
 
-### [Network Infrastructure Data Science (NIDS) Module]
+### Network Infrastructure Data Science (NIDS) Module
 
 ---
 
@@ -21,6 +21,10 @@ By the end of this assignment, students will be able to:
 - classify BGP announcements as RPKI-valid, RPKI-invalid, or RPKI-not-found
 - compare IRR, RPKI, and BGP data to identify stale, missing, inconsistent, or suspicious routing records
 
+## Slides
+
+- [ETP week 03 IRR/RPKI](slides/ETP-Week-03-Registries.pptx)
+
 ## Overview
 
 This module assumes you have completed nids-asn-introduction and nids-bgp-control-plane. Familiarity with ASNs, BGP prefix origination, and the Routeviews prefix-to-AS dataset is assumed.
@@ -39,6 +43,7 @@ Start by reading **Introduction** to get the background needed to understand RIR
   pip install jupyter pandas numpy matplotlib tqdm py-radix
   jupyter notebook nids-irr-rpki-whois.ipynb
   ```
+
   - complete each task by replacing the `# YOUR CODE HERE` sections
   - answer all written questions
 
