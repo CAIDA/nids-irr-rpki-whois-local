@@ -142,7 +142,7 @@ For this assignment, you will explore the following datasets:
 
 - [CAIDA Routeviews Prefix-to-AS Dataset](https://catalog.caida.org/dataset/routeviews_prefix2as)
 - [CAIDA AS Organizations Dataset](https://catalog.caida.org/dataset/as_organizations)
-- [MANRS Observatory](https://www.manrs.org/netops/observatory/)
+- [MANRS Observatory](https://observatory.manrs.org/)
 - [RPKI Documentation](https://rpki.readthedocs.io/)
 - [Routinator](https://github.com/NLnetLabs/routinator)
 - [RADB](https://www.radb.net/)

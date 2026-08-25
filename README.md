@@ -27,7 +27,7 @@ By the end of this assignment, students will be able to:
 
 ## Overview
 
-This module assumes you have completed nids-asn-introduction and nids-bgp-control-plane. Familiarity with ASNs, BGP prefix origination, and the Routeviews prefix-to-AS dataset is assumed.
+This module assumes you have completed [nids-asn-introduction](https://github.com/CAIDA/nids-asn-introduction) and [nids-bgp-control-plane](https://github.com/CAIDA/nids-bgp-control-plane). Familiarity with ASNs, BGP prefix origination, and the Routeviews prefix-to-AS dataset is assumed.
 
 Start by reading **Introduction** to get the background needed to understand RIRs, IRR databases, RPKI, and observed BGP routing data. **Datasets** explains each dataset and how to access it. **Tasks** describes the analysis steps and deliverables.
 
@@ -60,16 +60,18 @@ Start by reading **Introduction** to get the background needed to understand RIR
     ├- Task-greedy.md                  # Task 2A guidance: greedy coverage ordering
     ├- Task-classify.md                # Task 2B guidance: classifier decision trees and worked examples
     ├- download-data.sh                # Downloads all required data into data/
+    ├- slides/                         # Lecture slides (ETP-Week-03-Registries.pptx)
+    ├- images/                         # Figures referenced by the markdown (used in Datasets.md)
     ├- data/                           # Downloaded data (populated by download-data.sh, not committed)
     ├- cache_nids/                     # Parsed per-day caches (created at runtime, not committed)
     ├- nids-irr-rpki-whois.ipynb   ⬅  # Complete / Commit / Push
 
 ### Readings
 
-- Du et al., _IRR Hygiene in the RPKI Era_, PAM 2022.
-- Du et al., _IRRegularities in the Internet Routing Registry_, IMC 2023.
-- ICANN SSAC 121 routing-security briefing.
-- Testart and Clark, _Internet Routing Registries, Data Governance, and Security_, 2017.
+- Du et al., [_IRR Hygiene in the RPKI Era_](https://catalog.caida.org/paper/2022_irr_hygiene_rpki_era), PAM 2022.
+- Du et al., [_IRRegularities in the Internet Routing Registry_](https://catalog.caida.org/paper/2023_irregularities_in_internet_routing_registry), IMC 2023.
+- ICANN SSAC, [_SAC121: SSAC Briefing on Routing Security_](https://www.icann.org/en/system/files/files/sac-121-en.pdf), 2022.
+- Kuerbis and Mueller, [_Internet Routing Registries, Data Governance, and Security_](https://doi.org/10.1080/23738871.2017.1295092), Journal of Cyber Policy, 2017 ([open-access copy](https://www.internetgovernance.org/research/internet-routing-registries-data-governance-security/)).
 
 ### Glossary
 
