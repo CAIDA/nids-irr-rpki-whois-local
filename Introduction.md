@@ -1,4 +1,4 @@
-[README](README.md) | Introduction ⮕ | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | [Task 2A Guidance](Task-greedy.md) | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+[README](README.md) | Introduction ⮕ | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | [Task 2A Guide](Task-greedy.md) | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
 
 # Introduction and Background
 
@@ -148,4 +148,4 @@ For this assignment, you will explore the following datasets:
 - [RADB](https://www.radb.net/)
 - [RIPE Database Documentation](https://docs.db.ripe.net/)
 
-[README](README.md) | Introduction ⮕ | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | [Task 2A Guidance](Task-greedy.md) | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+[README](README.md) | Introduction ⮕ | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | [Task 2A Guide](Task-greedy.md) | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)

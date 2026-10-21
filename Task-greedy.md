@@ -1,4 +1,4 @@
-[README](README.md) | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | Task 2A Guidance ⮕ | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+[README](README.md) | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | Task 2A Guide ⮕ | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
 
 # Task 2A Guidance: Greedy IRR Coverage Ordering
 
@@ -92,4 +92,4 @@ Note how `irr_prefixes` (radb 5, nttcom 4) is the database's own total, while `n
 
 **Ranking by origins.** The greedy choice is by prefixes. Origins are computed and reported for the chosen database, but they should not decide `best_src`.
 
-[README](README.md) | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | Task 2A Guidance ⮕ | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+[README](README.md) | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | Task 2A Guide ⮕ | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)

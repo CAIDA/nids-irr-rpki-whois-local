@@ -1,4 +1,4 @@
-[README](README.md) | [Introduction](Introduction.md) | Datasets ⮕ | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | [Task 2A Guidance](Task-greedy.md) | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+[README](README.md) | [Introduction](Introduction.md) | Datasets ⮕ | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | [Task 2A Guide](Task-greedy.md) | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
 
 # Datasets
 
@@ -212,4 +212,4 @@ For this assignment, treat each origin AS as a separate BGP prefix-origin pair:
 
 The notebook caches parsed per-day files under `cache_nids/` in the working directory. Once a day's data has been fetched and parsed, subsequent runs skip the download. If a long-running cell is interrupted and restarted, already-cached days are not re-fetched. The cache is safe to delete if you want to force a fresh download.
 
-[README](README.md) | [Introduction](Introduction.md) | Datasets ⮕ | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | [Task 2A Guidance](Task-greedy.md) | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+[README](README.md) | [Introduction](Introduction.md) | Datasets ⮕ | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | [Task 2A Guide](Task-greedy.md) | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)

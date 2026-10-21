@@ -1,4 +1,4 @@
-README ⮕ | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | [Task 2A Guidance](Task-greedy.md) | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+README ⮕ | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | [Task 2A Guide](Task-greedy.md) | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
 
 ### Network Infrastructure Data Science (NIDS) Module
 
@@ -95,4 +95,4 @@ Start by reading **Introduction** to get the background needed to understand RIR
 - **py-radix (Radix)**: A Python prefix trie library used in this notebook for longest-prefix-match lookups. The `tree.search_covering(prefix)` method returns all stored prefixes that are covering supernets of or equal to the query prefix.
 - **Trust anchor (TA)**: The top-level RPKI certificate for an RIR. Each VRP carries the `trust_anchor` of the RIR whose archive validated it (`afrinic`, `ripencc`, `arin`, `lacnic`, or `apnic`).
 
-README ⮕ | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guidance](Task-download.md) | [Task 2A Guidance](Task-greedy.md) | [Task 2B Guidance](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
+README ⮕ | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | [Task 2A Guide](Task-greedy.md) | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
