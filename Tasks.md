@@ -37,7 +37,7 @@ As a rough sanity check on the sample date, expect on the order of ~2 million IR
 
 ### Part A: Explore IRR database snapshots
 
-Before implementing the greedy step, read [Task 2A Guidance](Task-greedy.md) for the algorithm and a worked example.
+Before implementing the greedy step, read [Task 2A Guide](Task-greedy.md) for the algorithm and a worked example.
 
 Start with one day of IRR route-object data. Use a greedy approach to find the ordering of IRR databases that maximizes cumulative unique IPv4 prefix coverage: repeatedly pick the database that adds the most not-yet-covered prefixes, then record how much each database contributes on top of the databases already chosen before it.
 
@@ -62,7 +62,7 @@ Answer the following question in the notebook:
 
 ### Part B: Classify BGP prefix-origin pairs using IRR and RPKI
 
-Before implementing the classifier functions, read [Task 2B Guidance](Task-classify.md) for decision trees and worked examples.
+Before implementing the classifier functions, read [Task 2B Guide](Task-classify.md) for decision trees and worked examples.
 
 Finally, use the Routeviews prefix-to-AS table for the selected day. Treat each row as an observed BGP prefix-origin pair. If a prefix has multiple origin ASes, treat each origin AS as a separate prefix-origin pair.
 
