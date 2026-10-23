@@ -19,7 +19,7 @@ There are three written questions (Q1-Q3). Q1 covers the one-day IRR exploration
 Follow [Task-download.md](Task-download.md) to run `./download-data.sh` and
 populate `data/`, then install the notebook's Python dependencies. Then
 launch Jupyter locally and run the setup cells followed by the sample-date
-cells (Task 2).
+cells (Task 2). Read [Task 1 Guide](Task-download.md) for instructions on downloading the data and running the module locally.
 
 ### Implementation Tips
 
