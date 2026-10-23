@@ -1,6 +1,6 @@
 [README](README.md) | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | Task 2A Guide ⮕ | [Task 2B Guide](Task-classify.md) | [Notebook](nids-irr-rpki-whois.ipynb)
 
-# Task 2A Guidance: Greedy IRR Coverage Ordering
+# Task 2A Guide: Greedy IRR Coverage Ordering
 
 This page prepares you to implement the greedy step inside `greedy_irr_coverage` required in [Task 2A](Tasks.md).
 
