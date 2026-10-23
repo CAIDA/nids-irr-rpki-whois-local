@@ -1,6 +1,6 @@
 [README](README.md) | [Introduction](Introduction.md) | [Datasets](Datasets.md) | [Tasks](Tasks.md) | [Task 1 Guide](Task-download.md) | [Task 2A Guide](Task-greedy.md) | Task 2B Guide ⮕ | [Notebook](nids-irr-rpki-whois.ipynb)
 
-# Task 2B Guidance: Classifying Prefix-Origin Pairs
+# Task 2B Guide: Classifying Prefix-Origin Pairs
 
 This page prepares you to implement the three classifier functions required in [Task 2B](Tasks.md): `classify_rpki`, `classify_irr`, and `classify_irr_rpki_consistency`.
 
