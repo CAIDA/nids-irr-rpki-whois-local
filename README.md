@@ -35,8 +35,8 @@ Start by reading **Introduction** to get the background needed to understand RIR
 - step 2 [read dataset overviews](Datasets.md)
 - step 3 [review the tasks](Tasks.md)
   - before Task 1, follow [Task-download.md](Task-download.md) to download the data you'll need to `data/`
-  - before Task 2A, read [Task 2A Guidance](Task-greedy.md) for the greedy coverage algorithm and a worked example
-  - before Task 2B, read [Task 2B Guidance](Task-classify.md) for classifier decision trees and worked examples
+  - before Task 2A, read [Task 2A Guide](Task-greedy.md) for the greedy coverage algorithm and a worked example
+  - before Task 2B, read [Task 2B Guide](Task-classify.md) for classifier decision trees and worked examples
 - step 4 install dependencies and run `nids-irr-rpki-whois.ipynb` locally
 
   ```bash
@@ -56,9 +56,9 @@ Start by reading **Introduction** to get the background needed to understand RIR
     ├- Introduction.md                 # Introduction and background
     ├- Datasets.md                     # Dataset overview and download instructions
     ├- Tasks.md                        # Task checklist and instructions
-    ├- Task-download.md                # Task 1 guidance: download IRR/RPKI/prefix2as data locally
-    ├- Task-greedy.md                  # Task 2A guidance: greedy coverage ordering
-    ├- Task-classify.md                # Task 2B guidance: classifier decision trees and worked examples
+    ├- Task-download.md                # Task 1 Guide: download IRR/RPKI/prefix2as data locally
+    ├- Task-greedy.md                  # Task 2A Guide: greedy coverage ordering
+    ├- Task-classify.md                # Task 2B Guide: classifier decision trees and worked examples
     ├- download-data.sh                # Downloads all required data into data/
     ├- slides/                         # Lecture slides (ETP-Week-03-Registries.pptx)
     ├- images/                         # Figures referenced by the markdown (used in Datasets.md)
